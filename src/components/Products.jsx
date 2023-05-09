@@ -1,13 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import ProductsItem from "@Components/ProductsItem";
 import "@Assets/less/products.less";
 import "@Assets/less/productsItem.less";
 import Search from "./Search";
+import AppContext from "@/context/AppContext";
 
 function Products({ title, children }) {
+  const {theme,setTheme} = useContext(AppContext)
   const [products, setProducts] = useState();
   const [productsSort, setProductsSort] = useState();
 
+  console.log('theme', theme);
+  // setTimeout(() =>  setTheme(pr => ({...pr, theme: 'light edit'})),2000)
   const onDeleteProduct = (id) => {
     const newData = products.filter((p) => p.id !== id);
     setProducts(newData);
