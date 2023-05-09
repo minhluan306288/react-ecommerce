@@ -1,0 +1,61 @@
+{
+  "name": "demo_deploy",
+  "version": "0.1.0",
+  "homepage": "https://minhluan306288.github.io/react-deploy",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^7.1.0",
+    "@fontsource/poppins": "^4.5.10",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "autoprefixer": "^10.4.14",
+    "axios": "^1.3.6",
+    "craco-less": "^2.0.0",
+    "daisyui": "^2.51.6",
+    "firebase": "^9.20.0",
+    "less": "^4.1.3",
+    "localforage": "^1.10.0",
+    "match-sorter": "^6.3.1",
+    "postcss": "^8.4.23",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-firebaseui": "^6.0.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "5.0.1",
+    "sort-by": "^1.2.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "dev": "craco start",
+    "build": "craco build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0",
+    "tailwindcss": "^3.3.1"
+  }
+}
